@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "chestesp",
+  "version": "1.0.0",
+  "name": "ChestESP (Client)",
+  "description": "Client-side Chest highlighting for Fabric (toggle with L). No server-side behavior.",
+  "authors": [
+    "2lidarsector"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.lidarsector.chestesp.ChestESPMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric": "${fabric_api_version}",
+    "minecraft": "1.21.10"
+  }
+}
