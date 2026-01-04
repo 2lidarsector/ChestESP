@@ -1,4 +1,10 @@
 {
   "key.chestesp.toggle": "Toggle ChestESP",
-  "category.chestesp": "ChestESP"
+  "category.chestesp": "ChestESP",
+  "option.chestesp.red": "Red",
+  "option.chestesp.green": "Green",
+  "option.chestesp.blue": "Blue",
+  "option.chestesp.alpha": "Alpha",
+  "option.chestesp.key": "Toggle Key (GLFW keycode)",
+  "option.chestesp.outline": "Draw Outline"
 }

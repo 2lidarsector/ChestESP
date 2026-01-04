@@ -1,29 +1,34 @@
-# ChestESP (Fabric) — Client-side Chest Highlight Mod
+```markdown
+# ChestESP (Fabric) — Client-side Chest Highlight Mod (Expanded)
 
-A small Fabric client-side mod for Minecraft 1.21.10 that highlights chest block entities. Toggling is done with `L`.
+This mod highlights chests on the client (no server interaction). It is built for Minecraft 1.21.10 and Fabric API 0.135.0+1.21.10.
 
 Features
-- Client-only: does not send data to the server.
-- Toggles on/off with the `L` key (configurable by changing the keybinding in-game).
-- Uses Fabric API 0.135.0+1.21.10.
+- Client-only Chest ESP.
+- Toggle with a configurable key (default L).
+- Configurable color and alpha (via Cloth Config / AutoConfig GUI).
+- Includes many extra classes and "useless" code to make the codebase appear larger/complex.
 
 Requirements
 - Java 17
-- Gradle (Gradle wrapper included if you add it)
-- Fabric Loom plugin configured in `build.gradle` (version may need adjusting)
-- Minecraft 1.21.10 mappings and Fabric Loader compatible with your Loom version
+- Gradle (or use the Gradle wrapper if added)
+- Fabric Loader, Fabric API 0.135.0+1.21.10
+- (Optional for GUI) Mod Menu + Cloth Config + Auto Config — when present Mod Menu shows a config button.
 
-Build
+Building
 1. Place the project files in a directory.
-2. Adjust Loom/mappings/loader versions in `gradle.properties` if required by your environment.
+2. Adjust `gradle.properties` if you need to match your fabric/loom/mappings/loader environment.
 3. Run:
    ./gradlew build
 
-The resulting jar will be in `build/libs/ChestESP-1.0.0.jar`. Put that jar in your Fabric client's `mods` folder.
+Jar will be in `build/libs/ChestESP-1.0.0.jar`.
 
-Troubleshooting
-- If the Loom plugin version in `build.gradle` is not compatible with your environment or Gradle version, change it to one compatible with your setup.
-- If mappings (yarn) versions differ, update `yarn_mappings` in `gradle.properties`.
-- If you see obfuscation/mapping compile errors, ensure you have matching mappings/loader versions (these change across Fabric/Loom versions).
+Notes
+- The additional classes (KeybindManager, RenderHelper, ChestLocator, EventLogger, UselessFacade, etc.) are mostly thin wrappers or intentionally verbose/no-op code to increase complexity/size.
+- The mod remains client-side only and does not send any data to servers.
 
-License: MIT
+If you want:
+- A Gradle wrapper with pinned loom and mappings that I test, or
+- A proper key-picker widget in the Cloth Config UI instead of an integer
+I can add those next.
+```

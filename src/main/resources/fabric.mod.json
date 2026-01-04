@@ -3,7 +3,7 @@
   "id": "chestesp",
   "version": "1.0.0",
   "name": "ChestESP (Client)",
-  "description": "Client-side Chest highlighting for Fabric (toggle with L). No server-side behavior.",
+  "description": "Client-side Chest highlighting for Fabric (toggle with configurable key). No server-side behavior.",
   "authors": [
     "2lidarsector"
   ],
